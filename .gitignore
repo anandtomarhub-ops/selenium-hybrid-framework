@@ -1,0 +1,31 @@
+# Maven
+target/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.eclipse
+.classpath
+.project
+.settings/
+
+# Reports (generated at runtime)
+reports/ExtentReport.html
+reports/screenshots/
+reports/cucumber.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Driver binaries
+drivers/*.exe
+drivers/*.zip
+
+# Logs
+logs/
+*.log
+
+# Sensitive config (if you create a local override)
+src/test/resources/config/local.properties

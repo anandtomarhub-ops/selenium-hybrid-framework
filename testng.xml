@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Exercise - Regression Suite" verbose="1" parallel="none">
+
+    <listeners>
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <groups>
+            <run>
+                <include name="Login"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Product Tests">
+        <groups>
+            <run>
+                <include name="Products"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automationexercise.runners.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
